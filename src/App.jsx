@@ -74,6 +74,7 @@ function App(){
 export default App;*/
 
 import { useState } from "react";
+import Counter from "./Counter";
 
 function App() {
     const [Fruit, setFruit] = useState("Mango");
@@ -90,6 +91,7 @@ function App() {
             <h1>state in React</h1>
             <h1>{Fruit}</h1>
             <button onClick={handleFruitChange}>Change Fruit</button>
+            <Counter></Counter>
         </div>
     );
 }
