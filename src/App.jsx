@@ -20,7 +20,7 @@ function App(){
 
 
 
-export default App;*/
+export default App;
 
 
 function App(){
@@ -56,7 +56,7 @@ function App(){
         </div>
     )*/
 
-        return(
+       /* return(
             <div>
                 <h1>JSX with curly braces</h1>
                 <h1>{userName}</h1>
@@ -71,11 +71,29 @@ function App(){
             </div>
         )
 }
+export default App;*/
+
+import { useState } from "react";
+
+function App() {
+    const [Fruit, setFruit] = useState("Mango");
+
+    const handleFruitChange = () => {
+        setFruit("Banana");
+    };
+
+    
+    
+
+    return (
+        <div>
+            <h1>state in React</h1>
+            <h1>{Fruit}</h1>
+            <button onClick={handleFruitChange}>Change Fruit</button>
+        </div>
+    );
+}
 export default App;
-
-
-
-
 
 
 
