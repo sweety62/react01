@@ -99,24 +99,41 @@ export default App;*/
 
 import { useState } from "react";
 function App() {
-    const [display, setDisplay] = useState(true);
+    const [Val, SetVal] = useState("Anill sidhu");
+   // const [display, setDisplay] = useState(true);
 
     
 
-    return (
-        <div>
-            <h1>Toggle in React js</h1>
-            <button onClick={() => setDisplay(!display)}>Toggle Display</button>
-            {/*
-                display?<h1>Sweety</h1>:null*/
+    //return (
+        //<div>
+           // <h1>Toggle in React js</h1>
+            //<button onClick={() => setDisplay(!display)}>Toggle Display</button>
+            //{/*
+                //display?<h1>Sweety</h1>:null*/
             
             
-                display?<h1>Raja</h1>:null
-            }
+                //display?<h1>Raja</h1>:null
+            //}
 
-        </div>
-    );
+        //</div>
+    //);
+//}
+
+return (
+    <div>
+        <h1>Get input value</h1>
+        <input type="text" value={Val} onChange={(event) => SetVal(event.target.value)} placeholder="Enter text" />
+        <h1>{Val}</h1>
+        <button onClick={() => SetVal("")}>Clear</button>
+    </div>
+)
 }
+
+
 export default App;
 
 
+
+
+
+    
