@@ -73,7 +73,7 @@ function App(){
 }
 export default App;*/
 
-import { useState } from "react";
+/*import { useState } from "react";
 import Counter from "./Counter";
 
 function App() {
@@ -95,9 +95,28 @@ function App() {
         </div>
     );
 }
+export default App;*/
+
+import { useState } from "react";
+function App() {
+    const [display, setDisplay] = useState(true);
+
+    
+
+    return (
+        <div>
+            <h1>Toggle in React js</h1>
+            <button onClick={() => setDisplay(!display)}>Toggle Display</button>
+            {/*
+                display?<h1>Sweety</h1>:null*/
+            
+            
+                display?<h1>Raja</h1>:null
+            }
+
+        </div>
+    );
+}
 export default App;
-
-
-
 
 
