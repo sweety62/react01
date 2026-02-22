@@ -56,20 +56,20 @@ function App(){
         </div>
     )*/
 
-       /* return(
-            <div>
-                <h1>JSX with curly braces</h1>
-                <h1>{userName}</h1>
-                <h1>{X + Y}</h1>
-                <h1>{X * Y}</h1>
-                <h1>{Fruit()}</h1>
-                <h1>{Vegetable()}</h1>
-                <h1>{Add(X,Y)}</h1>
-                <h1>{operation(X,Y,"add")}</h1>
-                <h1>{operation(X,Y,"multiply")}</h1>
-                <h1>{operation(X,Y,"divide")}</h1>
-            </div>
-        )
+/* return(
+     <div>
+         <h1>JSX with curly braces</h1>
+         <h1>{userName}</h1>
+         <h1>{X + Y}</h1>
+         <h1>{X * Y}</h1>
+         <h1>{Fruit()}</h1>
+         <h1>{Vegetable()}</h1>
+         <h1>{Add(X,Y)}</h1>
+         <h1>{operation(X,Y,"add")}</h1>
+         <h1>{operation(X,Y,"multiply")}</h1>
+         <h1>{operation(X,Y,"divide")}</h1>
+     </div>
+ )
 }
 export default App;*/
 
@@ -100,33 +100,33 @@ export default App;*/
 import { useState } from "react";
 function App() {
     const [Val, SetVal] = useState("Anill sidhu");
-   // const [display, setDisplay] = useState(true);
+    // const [display, setDisplay] = useState(true);
 
-    
+
 
     //return (
-        //<div>
-           // <h1>Toggle in React js</h1>
-            //<button onClick={() => setDisplay(!display)}>Toggle Display</button>
-            //{/*
-                //display?<h1>Sweety</h1>:null*/
-            
-            
-                //display?<h1>Raja</h1>:null
-            //}
+    //<div>
+    // <h1>Toggle in React js</h1>
+    //<button onClick={() => setDisplay(!display)}>Toggle Display</button>
+    //{/*
+    //display?<h1>Sweety</h1>:null*/
 
-        //</div>
+
+    //display?<h1>Raja</h1>:null
+    //}
+
+    //</div>
     //);
-//}
+    //}
 
-return (
-    <div>
-        <h1>Get input value</h1>
-        <input type="text" value={Val} onChange={(event) => SetVal(event.target.value)} placeholder="Enter text" />
-        <h1>{Val}</h1>
-        <button onClick={() => SetVal("")}>Clear</button>
-    </div>
-)
+    return (
+        <div>
+            <h1>Get input value</h1>
+            <input type="text" value={Val} onChange={(event) => SetVal(event.target.value)} placeholder="Enter text" />
+            <h1>{Val}</h1>
+            <button onClick={() => SetVal("")}>Clear</button>
+        </div>
+    )
 }
 
 
@@ -136,4 +136,3 @@ export default App;
 
 
 
-    
