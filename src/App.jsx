@@ -1,5 +1,6 @@
 
 /*import Login ,{Profile,Setting,Userkey}from "./UserComponent";
+
 function App(){
     return (
         <div>
@@ -97,7 +98,7 @@ function App() {
 }
 export default App;*/
 
-import { useState } from "react";
+/*import { useState } from "react";
 function App() {
     const [Val, SetVal] = useState("Anill sidhu");
     // const [display, setDisplay] = useState(true);
@@ -119,7 +120,7 @@ function App() {
     //);
     //}
 
-    return (
+    /*return (
         <div>
             <h1>Get input value</h1>
             <input type="text" value={Val} onChange={(event) => SetVal(event.target.value)} placeholder="Enter text" />
@@ -130,9 +131,18 @@ function App() {
 }
 
 
-export default App;
+export default App;*/
 
 
 
 
 
+import Style from "./style";
+function Dpp() {
+    return (
+        <div>
+            <Style />
+        </div>
+    )
+}
+export default Dpp;
